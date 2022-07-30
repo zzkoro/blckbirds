@@ -11,6 +11,9 @@
 		639CE735283EDD27001E98F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639CE734283EDD27001E98F2 /* ContentView.swift */; };
 		639CE737283EDD2A001E98F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639CE736283EDD2A001E98F2 /* Assets.xcassets */; };
 		639CE73A283EDD2A001E98F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639CE739283EDD2A001E98F2 /* Preview Assets.xcassets */; };
+		63B228FF284CFDA100A5F68A /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B228FE284CFDA100A5F68A /* Chart.swift */; };
+		63B22902284DACE300A5F68A /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B22901284DACE300A5F68A /* DataEntry.swift */; };
+		63B22905284DAFB500A5F68A /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B22904284DAFB500A5F68A /* ViewHelper.swift */; };
 		63ECE109283FB4C70009874A /* StockList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ECE108283FB4C70009874A /* StockList.swift */; };
 		63ECE10D283FC5AB0009874A /* CheesyChart in Frameworks */ = {isa = PBXBuildFile; productRef = 63ECE10C283FC5AB0009874A /* CheesyChart */; };
 /* End PBXBuildFile section */
@@ -21,6 +24,9 @@
 		639CE734283EDD27001E98F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		639CE736283EDD2A001E98F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		639CE739283EDD2A001E98F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63B228FE284CFDA100A5F68A /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		63B22901284DACE300A5F68A /* DataEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntry.swift; sourceTree = "<group>"; };
+		63B22904284DAFB500A5F68A /* ViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHelper.swift; sourceTree = "<group>"; };
 		63ECE108283FB4C70009874A /* StockList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +61,8 @@
 		639CE731283EDD27001E98F2 /* CrytoX */ = {
 			isa = PBXGroup;
 			children = (
+				63B22903284DAFA000A5F68A /* Helper */,
+				63B22900284DACC500A5F68A /* Model */,
 				639CE732283EDD27001E98F2 /* CrytoXApp.swift */,
 				639CE736283EDD2A001E98F2 /* Assets.xcassets */,
 				639CE738283EDD2A001E98F2 /* Preview Content */,
@@ -71,11 +79,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		63B22900284DACC500A5F68A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63B22901284DACE300A5F68A /* DataEntry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63B22903284DAFA000A5F68A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				63B22904284DAFB500A5F68A /* ViewHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		63ECE10A283FB4FD0009874A /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				639CE734283EDD27001E98F2 /* ContentView.swift */,
 				63ECE108283FB4C70009874A /* StockList.swift */,
+				63B228FE284CFDA100A5F68A /* Chart.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,8 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B228FF284CFDA100A5F68A /* Chart.swift in Sources */,
+				63B22902284DACE300A5F68A /* DataEntry.swift in Sources */,
 				63ECE109283FB4C70009874A /* StockList.swift in Sources */,
 				639CE735283EDD27001E98F2 /* ContentView.swift in Sources */,
+				63B22905284DAFB500A5F68A /* ViewHelper.swift in Sources */,
 				639CE733283EDD27001E98F2 /* CrytoXApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     
+    let stockData: [DataEntry]
     
     var body: some View {
         VStack() {
-            Header()
-            Rectangle()
+            Header(stockData: stockData)
+            Chart(dataSet: stockData)
                 .frame(height: 300)
             Spacer()
             TransactionButtons()
@@ -24,15 +25,18 @@ struct ContentView: View {
 }
 
 struct Header: View {
+    
+    let stockData: [DataEntry]
+    
     var body: some View {
         HStack(alignment: .bottom) {
-            Text("$" + String(format: "%.2f", 32.3832))
+            Text("$" + String(format: "%.2f", stockData.last?.close ?? 0))
                 .font(.custom("Avenir", size:45))
                 .frame(height:38)
-            Text("$" + String(format: "%.2f", 0.234) + "%")
+            Text("$" + String(format: "%.2f", getPercentageChange(stockData: stockData)) + "%")
                 .font(.custom("Avenir", size:18))
                 .fontWeight(.medium)
-                .foregroundColor(.green)
+                .foregroundColor(getPercentageChange(stockData: stockData) < 0 ? .red : .green)
         }
         .padding()
         .padding(.top, 30)
@@ -60,6 +64,6 @@ struct TransactionButtons: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(stockData: sampleData)
     }
 }
