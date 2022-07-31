@@ -11,6 +11,20 @@
 		637D47E1289615E400204ECD /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D47E0289615E400204ECD /* JSONModel.swift */; };
 		637D47E328961ABF00204ECD /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D47E228961ABF00204ECD /* DownloadManager.swift */; };
 		637D47E528961EAB00204ECD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D47E428961EAB00204ECD /* Extensions.swift */; };
+		63976E14289694D90021A6EF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63976E13289694D90021A6EF /* WidgetKit.framework */; };
+		63976E16289694D90021A6EF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63976E15289694D90021A6EF /* SwiftUI.framework */; };
+		63976E19289694D90021A6EF /* CryptoXWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63976E18289694D90021A6EF /* CryptoXWidget.swift */; };
+		63976E1B289694DA0021A6EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63976E1A289694DA0021A6EF /* Assets.xcassets */; };
+		63976E1F289694DA0021A6EF /* CryptoXWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 63976E11289694D90021A6EF /* CryptoXWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63976E24289695D40021A6EF /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B22901284DACE300A5F68A /* DataEntry.swift */; };
+		63976E25289696F90021A6EF /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B228FE284CFDA100A5F68A /* Chart.swift */; };
+		63976E262896984A0021A6EF /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B22904284DAFB500A5F68A /* ViewHelper.swift */; };
+		63976E292896995C0021A6EF /* WidgetDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63976E27289699130021A6EF /* WidgetDownloadManager.swift */; };
+		63976E2A289699700021A6EF /* WidgetDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63976E27289699130021A6EF /* WidgetDownloadManager.swift */; };
+		63976E2B28969C0B0021A6EF /* DownloadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D47DE289613DC00204ECD /* DownloadHelper.swift */; };
+		63976E2C28969C220021A6EF /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D47E0289615E400204ECD /* JSONModel.swift */; };
+		63976E2D28969C3D0021A6EF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D47E428961EAB00204ECD /* Extensions.swift */; };
+		63976E2F28969E280021A6EF /* IntentConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 63976E2E28969E280021A6EF /* IntentConfiguration.intentdefinition */; };
 		639CE733283EDD27001E98F2 /* CrytoXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639CE732283EDD27001E98F2 /* CrytoXApp.swift */; };
 		639CE735283EDD27001E98F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639CE734283EDD27001E98F2 /* ContentView.swift */; };
 		639CE737283EDD2A001E98F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639CE736283EDD2A001E98F2 /* Assets.xcassets */; };
@@ -22,11 +36,43 @@
 		63ECE10D283FC5AB0009874A /* CheesyChart in Frameworks */ = {isa = PBXBuildFile; productRef = 63ECE10C283FC5AB0009874A /* CheesyChart */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		63976E1D289694DA0021A6EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 639CE727283EDD27001E98F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63976E10289694D90021A6EF;
+			remoteInfo = CryptoXWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63976E20289694DA0021A6EF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				63976E1F289694DA0021A6EF /* CryptoXWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		637D47DE289613DC00204ECD /* DownloadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadHelper.swift; sourceTree = "<group>"; };
 		637D47E0289615E400204ECD /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
 		637D47E228961ABF00204ECD /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		637D47E428961EAB00204ECD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		63976E11289694D90021A6EF /* CryptoXWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CryptoXWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		63976E13289694D90021A6EF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		63976E15289694D90021A6EF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		63976E18289694D90021A6EF /* CryptoXWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoXWidget.swift; sourceTree = "<group>"; };
+		63976E1A289694DA0021A6EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63976E1C289694DA0021A6EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63976E27289699130021A6EF /* WidgetDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetDownloadManager.swift; sourceTree = "<group>"; };
+		63976E2E28969E280021A6EF /* IntentConfiguration.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = IntentConfiguration.intentdefinition; sourceTree = "<group>"; };
 		639CE72F283EDD27001E98F2 /* CrytoX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrytoX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639CE732283EDD27001E98F2 /* CrytoXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrytoXApp.swift; sourceTree = "<group>"; };
 		639CE734283EDD27001E98F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +85,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		63976E0E289694D90021A6EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63976E16289694D90021A6EF /* SwiftUI.framework in Frameworks */,
+				63976E14289694D90021A6EF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		639CE72C283EDD27001E98F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,10 +105,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63976E12289694D90021A6EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63976E13289694D90021A6EF /* WidgetKit.framework */,
+				63976E15289694D90021A6EF /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63976E17289694D90021A6EF /* CryptoXWidget */ = {
+			isa = PBXGroup;
+			children = (
+				63976E2E28969E280021A6EF /* IntentConfiguration.intentdefinition */,
+				63976E18289694D90021A6EF /* CryptoXWidget.swift */,
+				63976E1A289694DA0021A6EF /* Assets.xcassets */,
+				63976E1C289694DA0021A6EF /* Info.plist */,
+			);
+			path = CryptoXWidget;
+			sourceTree = "<group>";
+		};
 		639CE726283EDD27001E98F2 = {
 			isa = PBXGroup;
 			children = (
 				639CE731283EDD27001E98F2 /* CrytoX */,
+				63976E17289694D90021A6EF /* CryptoXWidget */,
+				63976E12289694D90021A6EF /* Frameworks */,
 				639CE730283EDD27001E98F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				639CE72F283EDD27001E98F2 /* CrytoX.app */,
+				63976E11289694D90021A6EF /* CryptoXWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +168,7 @@
 		63B22900284DACC500A5F68A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63976E27289699130021A6EF /* WidgetDownloadManager.swift */,
 				63B22901284DACE300A5F68A /* DataEntry.swift */,
 				637D47E0289615E400204ECD /* JSONModel.swift */,
 				637D47E228961ABF00204ECD /* DownloadManager.swift */,
@@ -120,6 +199,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		63976E10289694D90021A6EF /* CryptoXWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63976E23289694DA0021A6EF /* Build configuration list for PBXNativeTarget "CryptoXWidgetExtension" */;
+			buildPhases = (
+				63976E0D289694D90021A6EF /* Sources */,
+				63976E0E289694D90021A6EF /* Frameworks */,
+				63976E0F289694D90021A6EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoXWidgetExtension;
+			productName = CryptoXWidgetExtension;
+			productReference = 63976E11289694D90021A6EF /* CryptoXWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		639CE72E283EDD27001E98F2 /* CrytoX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 639CE73D283EDD2A001E98F2 /* Build configuration list for PBXNativeTarget "CrytoX" */;
@@ -127,10 +223,12 @@
 				639CE72B283EDD27001E98F2 /* Sources */,
 				639CE72C283EDD27001E98F2 /* Frameworks */,
 				639CE72D283EDD27001E98F2 /* Resources */,
+				63976E20289694DA0021A6EF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				63976E1E289694DA0021A6EF /* PBXTargetDependency */,
 			);
 			name = CrytoX;
 			packageProductDependencies = (
@@ -150,6 +248,9 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					63976E10289694D90021A6EF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					639CE72E283EDD27001E98F2 = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -172,11 +273,20 @@
 			projectRoot = "";
 			targets = (
 				639CE72E283EDD27001E98F2 /* CrytoX */,
+				63976E10289694D90021A6EF /* CryptoXWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		63976E0F289694D90021A6EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63976E1B289694DA0021A6EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		639CE72D283EDD27001E98F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +299,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		63976E0D289694D90021A6EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63976E24289695D40021A6EF /* DataEntry.swift in Sources */,
+				63976E2B28969C0B0021A6EF /* DownloadHelper.swift in Sources */,
+				63976E19289694D90021A6EF /* CryptoXWidget.swift in Sources */,
+				63976E2F28969E280021A6EF /* IntentConfiguration.intentdefinition in Sources */,
+				63976E2D28969C3D0021A6EF /* Extensions.swift in Sources */,
+				63976E2A289699700021A6EF /* WidgetDownloadManager.swift in Sources */,
+				63976E2C28969C220021A6EF /* JSONModel.swift in Sources */,
+				63976E262896984A0021A6EF /* ViewHelper.swift in Sources */,
+				63976E25289696F90021A6EF /* Chart.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		639CE72B283EDD27001E98F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +322,7 @@
 				63B228FF284CFDA100A5F68A /* Chart.swift in Sources */,
 				63B22902284DACE300A5F68A /* DataEntry.swift in Sources */,
 				63ECE109283FB4C70009874A /* StockList.swift in Sources */,
+				63976E292896995C0021A6EF /* WidgetDownloadManager.swift in Sources */,
 				639CE735283EDD27001E98F2 /* ContentView.swift in Sources */,
 				63B22905284DAFB500A5F68A /* ViewHelper.swift in Sources */,
 				637D47E528961EAB00204ECD /* Extensions.swift in Sources */,
@@ -208,7 +335,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		63976E1E289694DA0021A6EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63976E10289694D90021A6EF /* CryptoXWidgetExtension */;
+			targetProxy = 63976E1D289694DA0021A6EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		63976E21289694DA0021A6EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HCLDZV5B7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoXWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CryptoXWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jipps.CrytoX.CryptoXWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63976E22289694DA0021A6EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HCLDZV5B7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoXWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CryptoXWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jipps.CrytoX.CryptoXWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		639CE73B283EDD2A001E98F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -326,6 +515,7 @@
 		639CE73E283EDD2A001E98F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -355,6 +545,7 @@
 		639CE73F283EDD2A001E98F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,6 +575,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		63976E23289694DA0021A6EF /* Build configuration list for PBXNativeTarget "CryptoXWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63976E21289694DA0021A6EF /* Debug */,
+				63976E22289694DA0021A6EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		639CE72A283EDD27001E98F2 /* Build configuration list for PBXProject "CrytoX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
