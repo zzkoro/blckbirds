@@ -11,7 +11,7 @@ struct StockList: View {
     var body: some View {
         NavigationView {
             List {
-                StockListRow(stockData: sampleData)
+                StockListRow(downloadManager: DownloadManager(stockSymbol: "AAPL"), stockSymbol: "AAPL", stockName: "Apple, Inc.")
             }
             .listStyle(.plain)
             .navigationTitle("StockX")
@@ -27,26 +27,31 @@ struct StockList_Previews: PreviewProvider {
 
 struct StockListRow: View {
     
-    let stockData: [DataEntry]
+    @ObservedObject var downloadManager: DownloadManager
+    let stockSymbol: String
+    let stockName: String
     
     var body: some View {
         HStack {
-            NavigationLink(destination: ContentView(stockData: stockData)) {
+            NavigationLink(destination: ContentView(downloadManager: downloadManager, stockSymbol: stockSymbol)) {
                 VStack(alignment: .leading) {
-                    Text("AAPL")
+                    Text(stockSymbol)
                         .font(.custom("Avenir", size:20))
                         .fontWeight(.medium)
-                    Text("Apple Inc.")
+                    Text(stockName)
                         .font(.custom("Avenir", size:16))
-                }
+                }.background(Color.purple)
                 Spacer()
-                VStack(alignment: .trailing) {
-                    Text(String(format: "%.2f", getPercentageChange(stockData: stockData)) + "%")
-                        .font(.custom("Avenir", size:14))
-                        .fontWeight(.medium)
-                        .foregroundColor(getPercentageChange(stockData: stockData) < 0 ? .red : .green)
-                    Text("$" + String(format: "%.2f", stockData.last?.close ?? 0))
-                        .font(.custom("Avenir", size:26))
+                if downloadManager.dataFetched {
+                    VStack(alignment: .trailing) {
+                        Text(String(format: "%.2f", getPercentageChange(stockData: downloadManager.dailyEntries)) + "%")
+                            .font(.custom("Avenir", size:14))
+                            .fontWeight(.medium)
+                            .foregroundColor(getPercentageChange(stockData: downloadManager.dailyEntries) < 0 ? .red : .green)
+                        Text("$" + String(format: "%.2f", downloadManager.dailyEntries.last?.close ?? 0))
+                            .font(.custom("Avenir", size:26))
+                    }
+                    .background(Color.blue)
                 }
             }
         }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		637D47DF289613DC00204ECD /* DownloadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D47DE289613DC00204ECD /* DownloadHelper.swift */; };
+		637D47E1289615E400204ECD /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D47E0289615E400204ECD /* JSONModel.swift */; };
+		637D47E328961ABF00204ECD /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D47E228961ABF00204ECD /* DownloadManager.swift */; };
+		637D47E528961EAB00204ECD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D47E428961EAB00204ECD /* Extensions.swift */; };
 		639CE733283EDD27001E98F2 /* CrytoXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639CE732283EDD27001E98F2 /* CrytoXApp.swift */; };
 		639CE735283EDD27001E98F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639CE734283EDD27001E98F2 /* ContentView.swift */; };
 		639CE737283EDD2A001E98F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639CE736283EDD2A001E98F2 /* Assets.xcassets */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		637D47DE289613DC00204ECD /* DownloadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadHelper.swift; sourceTree = "<group>"; };
+		637D47E0289615E400204ECD /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
+		637D47E228961ABF00204ECD /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		637D47E428961EAB00204ECD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		639CE72F283EDD27001E98F2 /* CrytoX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrytoX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639CE732283EDD27001E98F2 /* CrytoXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrytoXApp.swift; sourceTree = "<group>"; };
 		639CE734283EDD27001E98F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				63B22901284DACE300A5F68A /* DataEntry.swift */,
+				637D47E0289615E400204ECD /* JSONModel.swift */,
+				637D47E228961ABF00204ECD /* DownloadManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -91,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				63B22904284DAFB500A5F68A /* ViewHelper.swift */,
+				637D47DE289613DC00204ECD /* DownloadHelper.swift */,
+				637D47E428961EAB00204ECD /* Extensions.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -186,7 +198,11 @@
 				63ECE109283FB4C70009874A /* StockList.swift in Sources */,
 				639CE735283EDD27001E98F2 /* ContentView.swift in Sources */,
 				63B22905284DAFB500A5F68A /* ViewHelper.swift in Sources */,
+				637D47E528961EAB00204ECD /* Extensions.swift in Sources */,
+				637D47E1289615E400204ECD /* JSONModel.swift in Sources */,
 				639CE733283EDD27001E98F2 /* CrytoXApp.swift in Sources */,
+				637D47E328961ABF00204ECD /* DownloadManager.swift in Sources */,
+				637D47DF289613DC00204ECD /* DownloadHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

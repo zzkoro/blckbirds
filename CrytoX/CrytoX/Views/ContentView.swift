@@ -9,18 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let stockData: [DataEntry]
+    @ObservedObject var downloadManager: DownloadManager
+    
+    let stockSymbol: String
+    
+    @State var timeFrameChoice = 0
+    
+//    let stockData: [DataEntry]
     
     var body: some View {
         VStack() {
-            Header(stockData: stockData)
-            Chart(dataSet: stockData)
-                .frame(height: 300)
-            Spacer()
-            TransactionButtons()
-            Spacer()
+            TimeFrameBar(timeFrameChoice: $timeFrameChoice)
+            if downloadManager.dataFetched {
+                Header(stockData: timeFrameChoice == 0 ? downloadManager.dailyEntries : downloadManager.weeklyEntries)
+                Chart(dataSet: timeFrameChoice == 0 ? downloadManager.dailyEntries : downloadManager.weeklyEntries)
+                    .frame(height: 300)
+                Spacer()
+                TransactionButtons()
+                Spacer()
+            }
         }
-        .navigationTitle("StockX")
+        .navigationTitle(stockSymbol)
     }
 }
 
@@ -62,8 +71,35 @@ struct TransactionButtons: View {
     }
 }
 
+struct TimeFrameBar: View {
+    
+    @Binding var timeFrameChoice: Int
+    
+    var body: some View {
+        HStack {
+            Text("Day")
+                .font(.custom("Avenir", size: 18))
+                .fontWeight(timeFrameChoice == 0 ? .medium : .none)
+                .foregroundColor(timeFrameChoice == 0 ? .blue : .gray)
+                .onTapGesture {
+                    self.timeFrameChoice = 0
+                }
+            Text("Week")
+                .font(.custom("Avenir", size: 18))
+                .fontWeight(timeFrameChoice == 1 ? .medium : .none)
+                .foregroundColor(timeFrameChoice == 1 ? .blue : .gray)
+                .onTapGesture {
+                    self.timeFrameChoice = 1
+                }
+            Spacer()
+            
+        }
+        .padding()
+    }
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(stockData: sampleData)
+        ContentView(downloadManager: DownloadManager(stockSymbol: "AAPL"), stockSymbol: "AAPL")
     }
 }

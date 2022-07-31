@@ -14,12 +14,15 @@ struct Chart: View {
     var body: some View {
 //        MySquare().frame(width: 250, height: 250)
         ZStack(alignment: .trailing) {
-            Grid()
-                .stroke(lineWidth: 0.2)
-//            Graph(dataSet: dataSet)
-//                .stroke(lineWidth: 2.0)
-            GraphGradient(dataSet: dataSet)
-            PriceLegend(dataSet: dataSet)
+            if !dataSet.isEmpty {
+                Grid()
+                    .stroke(lineWidth: 0.2)
+    //            Graph(dataSet: dataSet)
+    //                .stroke(lineWidth: 2.0)
+                GraphGradient(dataSet: dataSet)
+                    .fill(LinearGradient(gradient: bullishBearishGradient(lastClose: dataSet.last?.close ?? 0, firstClose: dataSet.first?.close ?? 0), startPoint: .top, endPoint: .bottom))
+                PriceLegend(dataSet: dataSet)
+            }
         }
         
     }
@@ -130,6 +133,10 @@ struct GraphGradient: Shape {
                          ) * rect.size.height
             path.addLine(to: CGPoint(x: xValue, y: yValue))
         }
+        
+        path.addLine(to: CGPoint(x: rect.size.width, y: rect.size.height))
+        path.addLine(to: CGPoint(x: 0, y: rect.size.height))
+        path.closeSubpath()
         
         return path
     }
